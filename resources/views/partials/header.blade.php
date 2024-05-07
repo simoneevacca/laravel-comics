@@ -10,16 +10,16 @@
     <div class="container d-flex justify-content-between">
         <img src="{{ Vite::asset('resources/img/DC-logo.png') }}" alt="">
         <nav class="nav justify-content-center align-items-center ">
-            <a class="nav-link" href="#">CHARACTERS</a>
-            <a class="nav-link" href="#">COMICS</a>
-            <a class="nav-link" href="#">MOVIES</a>
-            <a class="nav-link" href="#">TV</a>
-            <a class="nav-link" href="#">GAMES</a>
-            <a class="nav-link" href="#">COLLECTIBLES</a>
-            <a class="nav-link" href="#">VIDEOS</a>
-            <a class="nav-link" href="#">FANS</a>
-            <a class="nav-link" href="#">NEWS</a>
-            <a class="nav-link" href="#">SHOP</a>
+            <a class="nav-link {{Route::currentRouteName() === 'characters' ? 'nav-active' :''}}" href="{{route('characters')}}">CHARACTERS</a>
+            <a class="nav-link {{Route::currentRouteName() === 'comics' ? 'nav-active' :''}}" href="{{route('comics')}}">COMICS</a>
+            <a class="nav-link {{Route::currentRouteName() === 'movies' ? 'nav-active' :''}}" href="{{route('movies')}}">MOVIES</a>
+            <a class="nav-link {{Route::currentRouteName() === 'tv' ? 'nav-active' :''}}" href="#">TV</a>
+            <a class="nav-link {{Route::currentRouteName() === 'games' ? 'nav-active' :''}}" href="#">GAMES</a>
+            <a class="nav-link {{Route::currentRouteName() === 'collectibles' ? 'nav-active' :''}}" href="#">COLLECTIBLES</a>
+            <a class="nav-link {{Route::currentRouteName() === 'videos' ? 'nav-active' :''}}" href="#">VIDEOS</a>
+            <a class="nav-link {{Route::currentRouteName() === 'fans' ? 'nav-active' :''}}" href="#">FANS</a>
+            <a class="nav-link {{Route::currentRouteName() === 'news' ? 'nav-active' :''}}" href="#">NEWS</a>
+            <a class="nav-link {{Route::currentRouteName() === 'shop' ? 'nav-active' :''}}" href="#">SHOP</a>
         </nav>
         <div class="d-flex align-items-center">
             <input placeholder="Search" type="text">
