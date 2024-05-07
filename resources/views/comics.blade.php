@@ -5,7 +5,7 @@
     <div class="container">
         
         <div class="row row-cols-6">
-            @foreach ($comics_list as $comic) 
+            @foreach ($comics as $comic) 
                 <div class="col">
                     <div class="card d-flex flex-column">
                         <img  src="{{$comic['thumb']}}" alt="image describing the following comic {{$comic['title']}}">
