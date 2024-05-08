@@ -2,6 +2,12 @@
 @section('content')
 
     <section class="comic">
+        <div class="comic-image">
+            <div class="container">
+                <img src="{{$comic['thumb']}}" alt="">
+            </div>
+        </div>
+
         <div class="container d-flex">
             <div class="text">
                 <h2>{{$comic['title']}}</h2>

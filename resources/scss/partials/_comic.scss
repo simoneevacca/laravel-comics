@@ -1,6 +1,16 @@
 .comic {
-    padding: 2rem 0;
+    .comic-image {
+        position: relative;
+        height: 50px;
+        background-color: #0282f9;
+        img {
+            position: absolute;
+            bottom: 50%;
+            width: 200px;
+        }
+    }
     .container {
+        padding: 2rem 0;
         gap: 2rem;
         .availability {
             background-color: greenyellow;
