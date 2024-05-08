@@ -10,10 +10,10 @@
 
         <div class="container d-flex">
             <div class="text">
-                <h2>{{$comic['title']}}</h2>
+                <h2>{{strtoupper($comic['title'])}}</h2>
                 <div class="availability d-flex justify-content-between">
                     <div class="left d-flex justify-content-between">
-                        <div>U.S. Price: {{$comic['price']}}</div>
+                        <div>U.S. Price: <strong>{{$comic['price']}}</strong></div>
                         <div>AVAILABLE</div>
                     </div>
                     <div>
