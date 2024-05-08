@@ -1,0 +1,25 @@
+
+.comics {
+    background-color: #1c1c1c;
+    padding: 3rem 0 0 0;
+    .container {
+        .row {
+            .col {
+                padding-bottom: 3rem;
+                .card {
+                    background-color: #1c1c1c;
+                    height: 350px;
+                    border: none;
+                    img {
+                    
+                        object-fit:contain;
+                    }
+                    .title {
+                        flex-grow: 1;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
 @import 'partials/_header.scss';
 @import 'partials/footer.scss';
+@import 'partials/comics.scss';
 @import 'partials/comic.scss';
+
 
 .nav-active {
     border-bottom: 2px solid #0282f9;

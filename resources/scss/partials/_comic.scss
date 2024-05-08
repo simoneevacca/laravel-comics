@@ -1,23 +1,19 @@
-
-.comics {
-    background-color: #1c1c1c;
-    padding: 3rem 0 0 0;
+.comic {
+    padding: 2rem 0;
     .container {
-        .row {
-            .col {
-                padding-bottom: 3rem;
-                .card {
-                    background-color: #1c1c1c;
-                    height: 350px;
-                    border: none;
-                    img {
+        gap: 2rem;
+        .availability {
+            background-color: greenyellow;
+            .left {
+                flex-grow: 1;
+            }
+            > div {
+                padding: 1rem;
+                border: 1px solid black;
+                select {
+                    background-color: greenyellow;
                     
-                        object-fit:contain;
-                    }
-                    .title {
-                        flex-grow: 1;
-                        color: white;
-                    }
+
                 }
             }
         }

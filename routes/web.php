@@ -29,6 +29,15 @@ Route::get('/comics', function () {
 })->name('comics');
 
 
+Route::get('/comics/{id}', function ($id) {
+
+    abort_unless($id >= 0 && $id < count(config('db.comics_list')), 404);
+    $comic = config('db.comics_list')[$id];
+
+    return view('comic', compact('comic'));
+
+})->name('comic');
+
 
 
 
